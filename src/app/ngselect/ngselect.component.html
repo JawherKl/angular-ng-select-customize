@@ -1,0 +1,51 @@
+<div>
+  <label>Folder name:</label>
+  <br />
+  <ng-select
+    [clearable]="false"
+    [searchable]="false"
+    [selectOnTab]="true"
+    [clearSearchOnAdd]="true"
+    (open)="onDropdownOpen()"
+    (close)="onDropdownClose()"
+    bindLabel="name"
+    placeholder="{{ placeholderFolderText }}"
+    bindValue="id"
+    (ngModel)="(selectedFolderId)"
+    name="folderSelect"
+    (change)="onFolderSelected($event)"
+  >
+    <!-- Custom header template -->
+    <ng-template ng-header-tmp>
+      <div class="search-input-container">
+        <input
+          type="text"
+          class="ng-select-search"
+          (input)="onSearch($event)"
+        />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-search"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+          />
+        </svg>
+      </div>
+    </ng-template>
+    <ng-option *ngIf="searchedValueFound" [value]="-1"> No folder </ng-option>
+    <ng-option
+      class="search-message"
+      *ngIf="!searchedValueFound"
+      [disabled]="true"
+      >{{ 'No results match ' + searchedValue }}</ng-option
+    >
+    <ng-option *ngFor="let folder of filteredListFolders" [value]="folder.id">{{
+      folder.name
+    }}</ng-option>
+  </ng-select>
+</div>

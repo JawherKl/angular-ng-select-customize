@@ -1,0 +1,116 @@
+::ng-deep ng-select {
+  .ng-select-container {
+    font-family: 'Lato', 'Arial', sans-serif !important;
+    font-size: 14px !important;
+    color: #616f77 !important;
+  }
+  // Add the new rule for the border-bottom style
+  &.ng-select-opened.ng-select-bottom > .ng-select-container {
+    border-bottom: none !important;
+  }
+  .ng-option {
+    font-family: 'Lato', 'Arial', sans-serif !important;
+    font-size: 12px !important;
+    color: #646061;
+    font-weight: 400;
+    padding: 10px;
+  }
+  .ng-option-disabled {
+    background-color: #eeeeee !important;
+    color: #616f77 !important;
+    cursor: default !important;
+  }
+  /* Add a wrapper for the arrow */
+  .ng-select-container .ng-arrow-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push icon to the right */
+    padding-right: 1px !important; /* Add padding to the right for spacing */
+  }
+  /* Placeholder styling */
+  .ng-select-container .ng-placeholder {
+    padding-left: 4px !important;
+    padding-top: 1px !important;
+  }
+  .ng-arrow-wrapper::after {
+    content: '\25BC'; /* Unicode for a downward arrow */
+    font-size: 10.5px !important;
+    color: #7d7d7d !important;
+  }
+  .ng-select-container.open .ng-arrow-wrapper::after {
+    content: '\25B2'; /* Unicode for an upward arrow */
+    font-size: 10.5px !important;
+    color: #7d7d7d !important;
+  }
+  .ng-select-container.open {
+    border: 1px solid #1dbded !important; /* Blue border when selected and active */
+    //border-bottom: 1px solid $grey-first!important;/* Remove bottom border */
+    outline: none; /* Remove default outline */
+  }
+  ng-dropdown-panel {
+    border: 1px solid #1dbded !important; /* Blue border when selected and active */
+    border-top: none !important; /* Remove bottom border */
+    outline: none; /* Remove default outline */
+    background-color: white !important;
+    font-size: 12px !important;
+  }
+  .ng-header-tmp {
+    background-color: white !important; /* Add white background color */
+  }
+  .ng-select-search {
+    width: 95% !important;
+    border: none !important;
+    font-family: 'Lato', serif;
+    font-size: 12.5px !important;
+    color: #95a2a9 !important;
+    font-weight: 400;
+  }
+  .search-input-container input.ng-select-search:focus {
+    border: none; /* Remove border on focus */
+    outline: none; /* Remove outline on focus */
+  }
+}
+.search-input-container {
+  border: 1px solid #d6d4d4 !important; /* Blue border when selected and active */
+  background-color: white !important;
+  margin: 5px !important;
+}
+.search-icon-select {
+  font-size: 12.5px !important;
+  color: #888888 !important;
+  padding-top: 0 !important;
+}
+
+.ng-select:focus,
+.ng-select:focus:hover {
+  border: 1px solid #22beef;
+  box-shadow: none;
+}
+.ng-select .ng-select-container .ng-value-container .ng-placeholder {
+  font-family: Lato;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #c4c4c4;
+}
+.ng-select .ng-value-container .ng-placeholder {
+  font-family: Lato;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #c4c4c4;
+}
+.ng-select .ng-select-container:hover {
+  border-color: #b0adae;
+}
+.ng-select .ng-select-container {
+  border-radius: 0px !important;
+  border: 1px solid #d6d4d4;
+  color: #646061;
+  height: 33px;
+  padding: 6px;
+  font-size: 18px;
+}

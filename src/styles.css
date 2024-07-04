@@ -1,0 +1,63 @@
+/* Add application styles & imports to this file! */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+/* Styling for ng-select */
+.ng-select .ng-select-container {
+  font-family: 'Lato', 'Arial', sans-serif !important;
+  font-size: 14px !important;
+  color: #616f77 !important;
+}
+
+.ng-select .ng-option {
+  font-family: 'Lato', 'Arial', sans-serif !important;
+  font-size: 14px !important;
+}
+
+.ng-select:focus,
+.ng-select:focus:hover {
+  border: 1px solid #22beef;
+  box-shadow: none;
+}
+
+.ng-select .ng-select-container .ng-value-container .ng-placeholder {
+  font-family: Lato;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #c4c4c4; /* Replace $grey-first with the appropriate hex value */
+}
+
+.ng-select .ng-value-container .ng-placeholder {
+  font-family: Lato;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #c4c4c4; /* Replace $grey-first with the appropriate hex value */
+}
+
+.ng-select .ng-select-container:hover {
+  border-color: #b0adae;
+}
+
+.ng-select .ng-select-container {
+  border-radius: 0px !important;
+  border: 1px solid #d6d4d4;
+  color: #616f77; /* Replace $grey-fourth with the appropriate hex value */
+  height: 33px;
+  padding: 6px;
+  font-size: 16px; /* Replace $font-size-large with the appropriate value */
+}
+
+label {
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #1dbded; /* Replace $brand-default with the appropriate hex value */
+}

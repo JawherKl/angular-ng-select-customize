@@ -1,0 +1,112 @@
+/* Styling for ng-select */
+.ng-select .ng-select-container {
+  font-family: 'Lato', 'Arial', sans-serif !important;
+  font-size: 14px !important;
+  color: #616f77 !important;
+}
+
+.ng-select.ng-select-opened.ng-select-bottom > .ng-select-container {
+  border-bottom: none !important;
+}
+
+.ng-select .ng-option {
+  font-family: 'Lato', 'Arial', sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.ng-select .ng-option-disabled {
+  background-color: #eeeeee !important;
+  color: #616f77 !important;
+  cursor: default !important;
+}
+
+.ng-select .ng-select-container .ng-arrow-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 1px !important;
+}
+
+.ng-select .ng-select-container .ng-placeholder {
+  padding-left: 4px !important;
+  padding-top: 1px !important;
+}
+
+.ng-select .ng-arrow-wrapper::after {
+  content: '\25BC';
+  font-size: 10.5px !important;
+  color: #7d7d7d !important;
+}
+
+.ng-select .ng-select-container.open .ng-arrow-wrapper::after {
+  content: '\25B2';
+  font-size: 10.5px !important;
+  color: #7d7d7d !important;
+}
+
+.ng-select .ng-select-container.open {
+  border: 1px solid #1dbded !important;
+  border-bottom: 1px solid #c4c4c4 !important;
+  outline: none;
+}
+
+.ng-select ng-dropdown-panel {
+  border: 1px solid #1dbded !important;
+  border-top: none !important;
+  outline: none;
+  background-color: white !important;
+  font-size: 12px !important;
+}
+
+.ng-select .ng-header-tmp {
+  background-color: white !important;
+}
+
+.ng-select .ng-select-search {
+  width: 95% !important;
+  border: none !important;
+  font-family: 'Lato', serif;
+  font-size: 12.5px !important;
+  color: #95a2a9 !important;
+  font-weight: 400;
+}
+
+.ng-select .search-input-container input.ng-select-search:focus {
+  border: none;
+  outline: none;
+}
+
+.search-input-container {
+  border: 1px solid #d6d4d4 !important;
+  background-color: white !important;
+  margin: 5px !important;
+}
+
+.search-icon-select {
+  font-size: 12.5px !important;
+  color: #888888 !important;
+  padding-top: 0 !important;
+}
+
+.icon {
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  color: #646061;
+}
+
+::placeholder {
+  font-family: Lato;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #c4c4c4;
+}
